@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shane McGarry's Portfolio</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+
+    <!-- Include AOS for animations -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css">
+
+</head>
+<body>
+
+<!-- Navigation Bar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+    <div class="container">
+        <a class="navbar-brand " href="#">Shane's Portfolio</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link smooth-scroll" href="#hero">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link smooth-scroll" href="#education">Education</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link smooth-scroll" href="#projects">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link smooth-scroll" href="#work-experience">Work Experience</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link smooth-scroll" href="#interests">Interests</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link smooth-scroll" href="#contactModal" data-toggle="modal">Contact</a>
+                </li>
+                <!-- Theme toggle button -->
+                <!-- <button class="btn btn-sm btn-dark" id="themeToggle">Dark Mode</button> -->
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+<!-- Hero Section -->
+<section id="hero" class="d-flex align-items-center">
+    <div class="container">
+        <div class="row align-items-center">
+            <!-- Image Column -->
+            <div class="col-md-6">
+                <img src="images/me2.jpg" alt="Shane McGarry" class="img-fluid rounded-circle">
+            </div>
+            <!-- Text Column -->
+            <div class="col-md-6 text-left">
+                <h1>Shane McGarry</h1>
+                <p>Computer Science Student // Part-time Software Developer</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Education Section -->
+<section id="education" class="bg-light">
+    <div class="container">
+        <h2 data-toggle="collapse" data-target="#educationDetails" aria-expanded="true" aria-controls="educationDetails">
+            Education <i class="fas fa-chevron-up" aria-hidden="true"></i>
+        </h2>
+        <div id="educationDetails" class="collapse show">
+            <p>Bachelor (Hons) of Computer Science, Technological University of Dublin - 2020-2024</p>
+             <!-- Year Four -->
+             <div id="yearFour" class="card card-body mb-3">
+                <h4 class="text-primary" data-toggle="collapse" data-target="#yearFourModules" aria-expanded="false" aria-controls="yearFourModules">
+                    Year Four <i class="fas fa-chevron-down"></i>
+                </h4>
+                <div id="yearFourModules" class="collapse">
+                    <!-- Modules for Year Four -->
+                    <ul>
+                        <h5>Semester 8</h5>
+                        <li class="list-group-item d-flex justify-content-between align-items-centre">Applied Artificial Intelligence and Deep Learning (Elective) <span class="badge badge-success">Grade A</span></li>
+                        <li class="list-group-item d-flex justify-content-between align-items-centre">Enterprise Applications Development 2 <span class="badge badge-success">Grade A</span></li>
+                        <li class="list-group-item d-flex justify-content-between align-items-centre">Computational Theory <span class="badge badge-success">Grade A</span></li>
+                        <li class="list-group-item d-flex justify-content-between align-items-centre">Project <span class="badge badge-success">Grade A</span></li>
+                        <br>
+                        <h5>Semester 7</h5>
+                        <li class="list-group-item d-flex justify-content-between align-items-centre">Enterprise Applications Development 1 <span class="badge badge-success">Grade A</span></li>
+                        <li class="list-group-item d-flex justify-content-between align-items-centre">Information Management <span class="badge badge-success">Grade A</span></li>
+                        <li class="list-group-item d-flex justify-content-between align-items-centre">Applied Machine Learning <span class="badge badge-success">Grade A</span></li>
+                        <li class="list-group-item d-flex justify-content-between align-items-centre">Interactive Design & Visualisation <span class="badge badge-success">Grade A</span></li>
+                        <li class="list-group-item d-flex justify-content-between align-items-centre">Enterprise Performance Architecture <span class="badge badge-success">Grade A</span></li>
+                        <li class="list-group-item d-flex justify-content-between align-items-centre">Project <span class="badge badge-success">Grade A</span></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Year Three -->
+            <div id="yearThree" class="card card-body mb-3">
+                <h4 class="text-primary" data-toggle="collapse" data-target="#yearThreeModules" aria-expanded="false" aria-controls="yearThreeModules">
+                    Year Three <i class="fas fa-chevron-down"></i>
+                </h4>
+                <div id="yearThreeModules" class="collapse">
+                    <!-- Modules for Year Three -->
+                    <ul>
+                        <h5>Semester 6</h5>
+                        <li class="list-group-item d-flex justify-content-between align-items-centre">Work Placement <span class="badge badge-success">Grade A</span></li>
+                        <br>
+                        <h5>Semester 5</h5>
+                        <li class="list-group-item d-flex justify-content-between align-items-centre">Cloud Services & Distributed Computing <span class="badge badge-success">Grade A</span></li>
+                        <li class="list-group-item d-flex justify-content-between align-items-centre">Server-Side Web Development <span class="badge badge-success">Grade A</span></li>
+                        <li class="list-group-item d-flex justify-content-between align-items-centre">Big Data Technologies <span class="badge badge-success">Grade A</span></li>
+                        <li class="list-group-item d-flex justify-content-between align-items-centre">Data Structures and Algorithms <span class="badge badge-success">Grade A</span></li>
+                        <li class="list-group-item d-flex justify-content-between align-items-centre">Operating Systems <span class="badge badge-success">Grade A</span></li>
+                        <li class="list-group-item d-flex justify-content-between align-items-centre">Innovation & Entrepreneurship (Elective) <span class="badge badge-success">Grade A</span></li>
+                        <li class="list-group-item d-flex justify-content-between align-items-centre">Data Analysis (Elective) <span class="badge badge-success">Grade A</span></li>
+                        <br>
+                    </ul>
+                </div>
+            </div>
+            <div id="yearTwo" class="card card-body mb-3">
+                <h4 class="text-primary" data-toggle="collapse" data-target="#yearTwoModules" aria-expanded="false" aria-controls="yearTwoModules">
+                    Year Two <i class="fas fa-chevron-down"></i>
+                </h4>
+                <div id="yearTwoModules" class="collapse">
+                    <!-- Modules for Year Two -->
+                    <ul>
+                        <h5>Semester 4</h5>
+                        <li class="list-group-item d-flex justify-content-between align-items-centre">Software Development 4 <span class="badge badge-success">Grade A</span></li>
+                        <li class="list-group-item d-flex justify-content-between align-items-centre">Software Quality Assurance and Testing <span class="badge badge-success">Grade A</span></li>
+                        <li class="list-group-item d-flex justify-content-between align-items-centre">Client-Side Web Development <span class="badge badge-success">Grade A</span></li>
+                        <li class="list-group-item d-flex justify-content-between align-items-centre">Database Technologies <span class="badge badge-success">Grade A</span></li>
+                        <li class="list-group-item d-flex justify-content-between align-items-centre">Discrete Mathematics 2 <span class="badge badge-success">Grade A</span></li>
+                        <li class="list-group-item d-flex justify-content-between align-items-centre">Network Fundamentals <span class="badge badge-success">Grade A</span></li>
+                        <li class="list-group-item d-flex justify-content-between align-items-centre">Software Development 3 <span class="badge badge-success">Grade A</span></li>
+                        <br>
+                        <h5>Semester 3</h5>
+                        <li class="list-group-item d-flex justify-content-between align-items-centre">IT Service Management <span class="badge badge-success">Grade A</span></li>
+                        <li class="list-group-item d-flex justify-content-between align-items-centre">Project <span class="badge badge-success">Grade A</span></li>
+                        <li class="list-group-item d-flex justify-content-between align-items-centre">Data Administration and Analysis <span class="badge badge-success">Grade A</span></li>
+                        <li class="list-group-item d-flex justify-content-between align-items-centre">Management Science <span class="badge badge-success">Grade A</span></li>
+                        <li class="list-group-item d-flex justify-content-between align-items-centre">Routing & Switching Essentials <span class="badge badge-success">Grade A</span></li>
+                        <li class="list-group-item d-flex justify-content-between align-items-centre">Information Security <span class="badge badge-success">Grade A</span></li>
+                        <br>
+                    </ul>
+                </div>
+            </div>            
+            <div id="yearOne" class="card card-body mb-3">
+                <h4 class="text-primary" data-toggle="collapse" data-target="#yearOneModules" aria-expanded="false" aria-controls="yearOneModules">
+                    Year One <i class="fas fa-chevron-down"></i>
+                </h4>
+                <div id="yearOneModules" class="collapse">
+                    <!-- Modules for Year One -->
+                    <ul class="list-group">
+                        <h5>Semester 2</h5>
+                        <li class="list-group-item d-flex justify-content-between align-items-centre">
+                            Social Media Communications <span class="badge badge-success">Grade A</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-centre">
+                            Systems Analysis <span class="badge badge-success">Grade A</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-centre">
+                            Database Fundamentals <span class="badge badge-success">Grade A</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-centre">
+                            Statistics <span class="badge badge-success">Grade A</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-centre">
+                            Operating Systems Fundamentals <span class="badge badge-success">Grade A</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-centre">
+                            Software Development 2 <span class="badge badge-success">Grade A</span>
+                        </li>
+                        <br>
+                        <h5>Semester 1</h5>
+                        <li class="list-group-item d-flex justify-content-between align-items-centre">
+                            Critical Skills Development <span class="badge badge-success">Grade A</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-centre">
+                            Visual Design & User Experience <span class="badge badge-success">Grade A</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-centre">
+                            Business & Information Systems <span class="badge badge-success">Grade A</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-centre">
+                            Discrete Mathematics 1 <span class="badge badge-success">Grade A</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-centre">
+                            Computer Architecture <span class="badge badge-success">Grade A</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-centre">
+                            Software Development 1 <span class="badge badge-success">Grade A</span>
+                        </li>
+                        <br>
+                    </ul>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</section>
+
+
+<!-- Project Section -->
+<section id="projects" class="bg-light pt-5 pb-5">
+    <div class="container">
+        <h2 data-toggle="collapse" data-target="#projectDetails" aria-expanded="false" aria-controls="projectDetails">
+            Projects <i class="fas fa-chevron-down" aria-hidden="true"></i>
+        </h2>
+        <div id="projectDetails" class="collapse">
+            <p>Project 1: MovieBuff</p>
+            <p>Project 2: BlogWiz </p>
+        </div>
+    </div>
+</section>
+
+<!-- Work Experience Section -->
+<section id="work-experience" class="bg-light pt-5 pb-5">
+    <div class="container">
+        <h2 class="text-center mb-4" data-toggle="collapse" data-target="#workExperienceDetails" aria-expanded="false" aria-controls="workExperienceDetails">
+            Work Experience <i class="fas fa-chevron-down" aria-hidden="true"></i>
+        </h2>
+        <div id="workExperienceDetails" class="collapse show">
+            <!-- Work Experience Entry 1 -->
+            <div class="card mb-3">
+                <div class="row no-gutters">
+                    <div class="col-md-4">
+                        <img src="images/fathom.jpeg" class="card-img img-thumbnail" alt="Company 1">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">Software Engineer Intern</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Fathom - Internship | Jan 2023 - Present</h6>
+                            <p class="card-text">Engaged in coding and code reviews with a focus on React.js and AWS services, enhancing my software development skills in a professional environment.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Work Experience Entry 2 -->
+            <div class="card mb-3">
+                <div class="row no-gutters">
+                    <div class="col-md-4">
+                        <img src="images/ocb.jpeg" class="card-img img-thumbnail" alt="Company 2">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">Senior Stylist</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Old County Barbers | May 2018 - Jun 2021</h6>
+                            <p class="card-text">With over 4 years of experience cutting hair and working in a dynamic barbershop setting, I excel in various styling techniques and thrive under pressure, ensuring customer satisfaction.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Work Experience Entry 3 -->
+            <div class="card">
+                <div class="row no-gutters">
+                    <div class="col-md-4">
+                        <img src="images/dcb.png" class="card-img img-thumbnail" alt="Company 3">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">Afro Hair Stylist</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Designer Cuts | May 2020 - Sep 2020</h6>
+                            <p class="card-text">Specialized in Afro-textured hair, contributing to an inclusive environment and expanding my expertise in diverse hairstyling methods.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Interests Section -->
+<section id="interests" class="bg-light pt-5 pb-5">
+    <div class="container">
+        <h2 class="text-center mb-4" data-toggle="collapse" data-target="#interestsDetails" aria-expanded="false" aria-controls="interestsDetails">
+            Interests <i class="fas fa-chevron-down" aria-hidden="true"></i>
+        </h2>
+        <div id="interestsDetails" class="collapse show">
+            <div class="row">
+                <!-- Coding Interest -->
+                <div class="col-md-3 text-center mb-3">
+                    <i class="fas fa-code fa-3x mb-2"></i>
+                    <h4 class="mb-2">Coding</h4>
+                    <p>Passionate about contributing to open source projects and engaging in hackathons.</p>
+                </div>
+                
+                <!-- Football Interest -->
+                <div class="col-md-3 text-center mb-3">
+                    <i class="fas fa-futbol fa-3x mb-2"></i>
+                    <h4 class="mb-2">Football</h4>
+                    <p>Active football player with a love for both playing and watching the game.</p>
+                </div>
+                
+                <!-- Hair Styling Interest -->
+                <div class="col-md-3 text-center mb-3">
+                    <i class="fas fa-scissors fa-3x mb-2"></i>
+                    <h4 class="mb-2">Hair Styling</h4>
+                    <p>Enjoy keeping up with styling trends and cutting hair as a creative outlet.</p>
+                </div>
+                
+                <!-- Movie Watching Interest -->
+                <div class="col-md-3 text-center mb-3">
+                    <i class="fas fa-film fa-3x mb-2"></i>
+                    <h4 class="mb-2">Movies</h4>
+                    <p>Avid movie watcher with a broad taste in genres and a keen interest in film critique.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Button trigger modal -->
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#contactModal">
+    Contact Me
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="contactModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="contactModalLabel">Contact Information</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p>If you would like to get in touch with me, you can contact me at:</p>
+                <p>Email: <a href="mailto:shanemcg992@gmail.com">shanemcg992@gmail.com</a></p>
+                <p>Phone: <a href="tel:+353834347870">083 434 7870</a></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<button onclick="topFunction()" id="myBtn" title="Go to top" class="btn btn-primary"><i class="fas fa-chevron-up" aria-hidden="true"></i></button>
+
+
+
+
+<!-- Bootstrap JS and its dependencies -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.9.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<!-- Custom JS -->
+<script src="script.js"></script>
+
+</body>
+</html>
