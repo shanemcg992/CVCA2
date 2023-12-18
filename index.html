@@ -1,469 +1,1028 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Shane McGarry's Portfolio</title>
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
     <!-- FontAwesome -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css">
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css" />
 
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css"
+    />
+  </head>
+  <body>
+    <!-- Side Navigation Bar -->
+    <nav
+      id="sidebar"
+      class="d-flex flex-column align-items-start bg-dark text-white"
+    >
+      <a class="navbar-brand ml-3" href="#hero">Shane McGarry</a>
+      <a class="nav-link smooth-scroll" href="#education">Education</a>
+      <a class="nav-link smooth-scroll" href="#projects">Projects</a>
+      <a class="nav-link smooth-scroll" href="#skills">Skills</a>
+      <a class="nav-link smooth-scroll" href="#work-experience"
+        >Work Experience</a
+      >
+      <button
+        type="button"
+        class="btn btn-dark nav-link smooth-scroll"
+        data-toggle="modal"
+        data-target="#contactModal"
+      >
+        Contact
+      </button>
+      <br />
+      <br />
+      <br />
+      <a class="nav-link" href="bootstrap-used.html">Bootstrap Used</a>
+    </nav>
 
-</head>
-<body>
-
-<!-- Side Navigation Bar -->
-<nav id="sidebar" class="d-flex flex-column align-items-start bg-dark text-white">
-    <a class="navbar-brand" href="#hero">Shane McGarry</a>
-    <a class="nav-link smooth-scroll" href="#about">About</a>
-    <a class="nav-link smooth-scroll" href="#education">Education</a>
-    <a class="nav-link smooth-scroll" href="#projects">Projects</a>
-    <a class="nav-link smooth-scroll" href="#skills">Skills</a>
-    <a class="nav-link smooth-scroll" href="#work-experience">Work Experience</a>
-    <a class="nav-link smooth-scroll" href="#contact">Contact</a>
-</nav>
-
-<!-- Hero Section -->
-<section id="hero" class="d-flex align-items-center">
-    <div class="container-fluid">
+    <!-- Hero Section -->
+    <section id="hero" class="d-flex align-items-center">
+      <div class="container-fluid">
         <div class="row align-items-center">
-            <div class="col-12 col-md-6 offset-md-3 text-center">
-                <img src="images/MicrosoftTeams-image.png" class="img-fluid rounded-circle mb-5" alt="me">
-                <h1>Shane McGarry</h1>
-                <p>{{ Developer }} , Barber , Student</p>
-            </div>
+          <div class="col-12 col-md-6 offset-md-3 text-center">
+            <img
+              src="images/MicrosoftTeams-image.png"
+              class="img-fluid rounded-circle mb-5"
+              alt="me"
+            />
+            <h1>Shane McGarry</h1>
+            <p>{{ Developer }} , Barber , Student</p>
+            <p>
+              I am currently an Undergraduate Student at TUD Ireland in my Final
+              Year. I am studying Bachelor of Science (Hons) in Computing with
+              Software.
+            </p>
+          </div>
         </div>
-    </div>
-</section>
+      </div>
+    </section>
 
-
-<!-- Hero Section -->
-<section id="about" class="d-flex align-items-center">
-    <div class="container-fluid">
-        <div class="row align-items-center">
-            <div class="col-12 col-md-6 offset-md-3">
-                <h1 class="text-center mb-4" id="heading">About Me</h1>
-                <p>I am currently an Undergraduate Student at TUD Ireland in my Final Year. I am studying Bachelor of Science (Hons) in Computing with Software.</p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- Education Section -->
-<section id="education" class="bg-light">
-    <div class="container">
-        <h2 class="text-center mb-4" id="heading">
-            Education
-        </h2>
+    <!-- Education Section -->
+    <section id="education" class="bg-light">
+      <div class="container">
+        <h2 class="text-center mb-4" id="heading">Education</h2>
         <div id="educationDetails" class="collapse show">
-            <p>Bachelor (Hons) of Computer Science, Technological University of Dublin - 2020-2024</p>
-             <!-- Year Four -->
-             <div id="yearFour" class="card card-body mb-3">
-                <h5 class="text" data-toggle="collapse" data-target="#yearFourModules" aria-expanded="true" aria-controls="yearFourModules">
-                    Year Four
-                </h5>
-                <div id="yearFourModules" class="collapse show" aria-labelledby="headingFour" data-parent="#educationDetails">
-                    <!-- Modules for Year Four -->
-                    <ul>
-                        <h5>Semester 8</h5>
-                        <li class="list-group-item d-flex justify-content-between align-items-centre">Applied Artificial Intelligence and Deep Learning (Elective) <span class="badge badge-success">Grade A</span></li>
-                        <li class="list-group-item d-flex justify-content-between align-items-centre">Enterprise Applications Development 2 <span class="badge badge-success">Grade A</span></li>
-                        <li class="list-group-item d-flex justify-content-between align-items-centre">Computational Theory <span class="badge badge-success">Grade A</span></li>
-                        <li class="list-group-item d-flex justify-content-between align-items-centre">Project <span class="badge badge-success">Grade A</span></li>
-                        <br>
-                        <h5>Semester 7</h5>
-                        <li class="list-group-item d-flex justify-content-between align-items-centre">Enterprise Applications Development 1 <span class="badge badge-success">Grade A</span></li>
-                        <li class="list-group-item d-flex justify-content-between align-items-centre">Information Management <span class="badge badge-success">Grade A</span></li>
-                        <li class="list-group-item d-flex justify-content-between align-items-centre">Applied Machine Learning <span class="badge badge-success">Grade A</span></li>
-                        <li class="list-group-item d-flex justify-content-between align-items-centre">Interactive Design & Visualisation <span class="badge badge-success">Grade A</span></li>
-                        <li class="list-group-item d-flex justify-content-between align-items-centre">Enterprise Performance Architecture <span class="badge badge-success">Grade A</span></li>
-                        <li class="list-group-item d-flex justify-content-between align-items-centre">Project <span class="badge badge-success">Grade A</span></li>
-                    </ul>
-                </div>
-            </div>
-            <!-- Year Three -->
-            <div id="yearThree" class="card card-body mb-3">
-                <h5 class="text" data-toggle="collapse" data-target="#yearThreeModules" aria-expanded="false" aria-controls="yearThreeModules">
-                    Year Three
-                </h5>
-                <div id="yearThreeModules" class="collapse">
-                    <!-- Modules for Year Three -->
-                    <ul>
-                        <h5>Semester 6</h5>
-                        <li class="list-group-item d-flex justify-content-between align-items-centre">Work Placement <span class="badge badge-success">Grade A</span></li>
-                        <br>
-                        <h5>Semester 5</h5>
-                        <li class="list-group-item d-flex justify-content-between align-items-centre">Cloud Services & Distributed Computing <span class="badge badge-success">Grade A</span></li>
-                        <li class="list-group-item d-flex justify-content-between align-items-centre">Server-Side Web Development <span class="badge badge-success">Grade A</span></li>
-                        <li class="list-group-item d-flex justify-content-between align-items-centre">Big Data Technologies <span class="badge badge-success">Grade A</span></li>
-                        <li class="list-group-item d-flex justify-content-between align-items-centre">Data Structures and Algorithms <span class="badge badge-success">Grade A</span></li>
-                        <li class="list-group-item d-flex justify-content-between align-items-centre">Operating Systems <span class="badge badge-success">Grade A</span></li>
-                        <li class="list-group-item d-flex justify-content-between align-items-centre">Innovation & Entrepreneurship (Elective) <span class="badge badge-success">Grade A</span></li>
-                        <li class="list-group-item d-flex justify-content-between align-items-centre">Data Analysis (Elective) <span class="badge badge-success">Grade A</span></li>
-                        <br>
-                    </ul>
-                </div>
-            </div>
-            <div id="yearTwo" class="card card-body mb-3">
-                <h5 class="text" data-toggle="collapse" data-target="#yearTwoModules" aria-expanded="false" aria-controls="yearTwoModules">
-                    Year Two
-                </h5>
-                <div id="yearTwoModules" class="collapse">
-                    <!-- Modules for Year Two -->
-                    <ul>
-                        <h5>Semester 4</h5>
-                        <li class="list-group-item d-flex justify-content-between align-items-centre">Software Development 4 <span class="badge badge-success">Grade A</span></li>
-                        <li class="list-group-item d-flex justify-content-between align-items-centre">Software Quality Assurance and Testing <span class="badge badge-success">Grade A</span></li>
-                        <li class="list-group-item d-flex justify-content-between align-items-centre">Client-Side Web Development <span class="badge badge-success">Grade A</span></li>
-                        <li class="list-group-item d-flex justify-content-between align-items-centre">Database Technologies <span class="badge badge-success">Grade A</span></li>
-                        <li class="list-group-item d-flex justify-content-between align-items-centre">Discrete Mathematics 2 <span class="badge badge-success">Grade A</span></li>
-                        <li class="list-group-item d-flex justify-content-between align-items-centre">Network Fundamentals <span class="badge badge-success">Grade A</span></li>
-                        <li class="list-group-item d-flex justify-content-between align-items-centre">Software Development 3 <span class="badge badge-success">Grade A</span></li>
-                        <br>
-                        <h5>Semester 3</h5>
-                        <li class="list-group-item d-flex justify-content-between align-items-centre">IT Service Management <span class="badge badge-success">Grade A</span></li>
-                        <li class="list-group-item d-flex justify-content-between align-items-centre">Project <span class="badge badge-success">Grade A</span></li>
-                        <li class="list-group-item d-flex justify-content-between align-items-centre">Data Administration and Analysis <span class="badge badge-success">Grade A</span></li>
-                        <li class="list-group-item d-flex justify-content-between align-items-centre">Management Science <span class="badge badge-success">Grade A</span></li>
-                        <li class="list-group-item d-flex justify-content-between align-items-centre">Routing & Switching Essentials <span class="badge badge-success">Grade A</span></li>
-                        <li class="list-group-item d-flex justify-content-between align-items-centre">Information Security <span class="badge badge-success">Grade A</span></li>
-                        <br>
-                    </ul>
-                </div>
-            </div>            
-            <div id="yearOne" class="card card-body mb-3">
-                <h5 class="text" data-toggle="collapse" data-target="#yearOneModules" aria-expanded="false" aria-controls="yearOneModules">
-                    Year One 
-                </h5>
-                <div id="yearOneModules" class="collapse">
-                    <!-- Modules for Year One -->
-                    <ul class="list-group">
-                        <h5>Semester 2</h5>
-                        <li class="list-group-item d-flex justify-content-between align-items-centre">
-                            Social Media Communications <span class="badge badge-success">Grade A</span>
-                        </li>
-                        <li class="list-group-item d-flex justify-content-between align-items-centre">
-                            Systems Analysis <span class="badge badge-success">Grade A</span>
-                        </li>
-                        <li class="list-group-item d-flex justify-content-between align-items-centre">
-                            Database Fundamentals <span class="badge badge-success">Grade A</span>
-                        </li>
-                        <li class="list-group-item d-flex justify-content-between align-items-centre">
-                            Statistics <span class="badge badge-success">Grade A</span>
-                        </li>
-                        <li class="list-group-item d-flex justify-content-between align-items-centre">
-                            Operating Systems Fundamentals <span class="badge badge-success">Grade A</span>
-                        </li>
-                        <li class="list-group-item d-flex justify-content-between align-items-centre">
-                            Software Development 2 <span class="badge badge-success">Grade A</span>
-                        </li>
-                        <br>
-                        <h5>Semester 1</h5>
-                        <li class="list-group-item d-flex justify-content-between align-items-centre">
-                            Critical Skills Development <span class="badge badge-success">Grade A</span>
-                        </li>
-                        <li class="list-group-item d-flex justify-content-between align-items-centre">
-                            Visual Design & User Experience <span class="badge badge-success">Grade A</span>
-                        </li>
-                        <li class="list-group-item d-flex justify-content-between align-items-centre">
-                            Business & Information Systems <span class="badge badge-success">Grade A</span>
-                        </li>
-                        <li class="list-group-item d-flex justify-content-between align-items-centre">
-                            Discrete Mathematics 1 <span class="badge badge-success">Grade A</span>
-                        </li>
-                        <li class="list-group-item d-flex justify-content-between align-items-centre">
-                            Computer Architecture <span class="badge badge-success">Grade A</span>
-                        </li>
-                        <li class="list-group-item d-flex justify-content-between align-items-centre">
-                            Software Development 1 <span class="badge badge-success">Grade A</span>
-                        </li>
-                        <br>
-                    </ul>
-                </div>
-            </div>
-            
-        </div>
-    </div>
-</section>
+          <div style="display: flex; align-items: center">
+            <img
+              src="images/TU_Dublin_Logo.svg.png"
+              alt="tud"
+              height="100px"
+              width="100px"
+              class="mt-2 mb-4"
+              style="margin-right: 20px"
+            />
+            <p style="margin-right: 20px">
+              Bachelor (Hons) of Computer Science, Technological University of
+              Dublin - 2020-2024
+            </p>
+          </div>
 
-<!-- Project Section -->
-<section id="projects" class="bg-light pt-5 pb-5">
-    <div class="container">
-        <h2 class="text-center mb-4" id="heading">Projects</h2>
+          <!-- Year Four -->
+          <div id="yearFour" class="card card-body mb-3">
+            <h5
+              class="text"
+              style="font-weight: bold"
+              data-toggle="collapse"
+              data-target="#yearFourModules"
+              aria-expanded="true"
+              aria-controls="yearFourModules"
+            >
+              Year Four
+            </h5>
+            <div
+              id="yearFourModules"
+              class="collapse show"
+              aria-labelledby="headingFour"
+              data-parent="#educationDetails"
+            >
+              <!-- Modules for Year Four -->
+              <ul>
+                <h5>Semester 8</h5>
+                <li
+                  class="list-group-item d-flex justify-content-between align-items-centre"
+                >
+                  Applied Artificial Intelligence and Deep Learning (Elective)
+                  <span class="badge badge-success" style="width: 60px">A</span>
+                </li>
+                <li
+                  class="list-group-item d-flex justify-content-between align-items-centre"
+                >
+                  Enterprise Applications Development 2
+                  <span class="badge badge-success" style="width: 60px">A</span>
+                </li>
+                <li
+                  class="list-group-item d-flex justify-content-between align-items-centre"
+                >
+                  Computational Theory
+                  <span class="badge badge-success" style="width: 60px"
+                    >B+</span
+                  >
+                </li>
+                <li
+                  class="list-group-item d-flex justify-content-between align-items-centre"
+                >
+                  Project
+                  <span class="badge badge-success" style="width: 60px">A</span>
+                </li>
+                <br />
+                <h5>Semester 7</h5>
+                <li
+                  class="list-group-item d-flex justify-content-between align-items-centre"
+                >
+                  Enterprise Applications Development 1
+                  <span class="badge badge-success" style="width: 60px">A</span>
+                </li>
+                <li
+                  class="list-group-item d-flex justify-content-between align-items-centre"
+                >
+                  Information Management
+                  <span class="badge badge-success" style="width: 60px">B</span>
+                </li>
+                <li
+                  class="list-group-item d-flex justify-content-between align-items-centre"
+                >
+                  Applied Machine Learning
+                  <span class="badge badge-success" style="width: 60px">A</span>
+                </li>
+                <li
+                  class="list-group-item d-flex justify-content-between align-items-centre"
+                >
+                  Interactive Design & Visualisation
+                  <span class="badge badge-success" style="width: 60px"
+                    >B+</span
+                  >
+                </li>
+                <li
+                  class="list-group-item d-flex justify-content-between align-items-centre"
+                >
+                  Enterprise Performance Architecture
+                  <span class="badge badge-success" style="width: 60px">B</span>
+                </li>
+                <li
+                  class="list-group-item d-flex justify-content-between align-items-centre"
+                >
+                  Project
+                  <span class="badge badge-success" style="width: 60px">A</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- Year Three -->
+          <div id="yearThree" class="card card-body mb-3">
+            <h5
+              class="text"
+              style="font-weight: bold"
+              data-toggle="collapse"
+              data-target="#yearThreeModules"
+              aria-expanded="false"
+              aria-controls="yearThreeModules"
+            >
+              Year Three
+            </h5>
+            <div id="yearThreeModules" class="collapse">
+              <!-- Modules for Year Three -->
+              <ul>
+                <h5>Semester 6</h5>
+                <li
+                  class="list-group-item d-flex justify-content-between align-items-centre"
+                >
+                  Work Placement
+                  <span class="badge badge-success" style="width: 60px">A</span>
+                </li>
+                <br />
+                <h5>Semester 5</h5>
+                <li
+                  class="list-group-item d-flex justify-content-between align-items-centre"
+                >
+                  Cloud Services & Distributed Computing
+                  <span class="badge badge-success" style="width: 60px"
+                    >C+</span
+                  >
+                </li>
+                <li
+                  class="list-group-item d-flex justify-content-between align-items-centre"
+                >
+                  Server-Side Web Development
+                  <span class="badge badge-success" style="width: 60px"
+                    >B-</span
+                  >
+                </li>
+                <li
+                  class="list-group-item d-flex justify-content-between align-items-centre"
+                >
+                  Big Data Technologies
+                  <span class="badge badge-success" style="width: 60px"
+                    >B+</span
+                  >
+                </li>
+                <li
+                  class="list-group-item d-flex justify-content-between align-items-centre"
+                >
+                  Data Structures and Algorithms
+                  <span class="badge badge-success" style="width: 60px">A</span>
+                </li>
+                <li
+                  class="list-group-item d-flex justify-content-between align-items-centre"
+                >
+                  Operating Systems
+                  <span class="badge badge-success" style="width: 60px"
+                    >B+</span
+                  >
+                </li>
+                <li
+                  class="list-group-item d-flex justify-content-between align-items-centre"
+                >
+                  Data Analysis (Elective)
+                  <span class="badge badge-success" style="width: 60px">A</span>
+                </li>
+                <br />
+              </ul>
+            </div>
+          </div>
+          <div id="yearTwo" class="card card-body mb-3">
+            <h5
+              class="text"
+              style="font-weight: bold"
+              data-toggle="collapse"
+              data-target="#yearTwoModules"
+              aria-expanded="false"
+              aria-controls="yearTwoModules"
+            >
+              Year Two
+            </h5>
+            <div id="yearTwoModules" class="collapse">
+              <!-- Modules for Year Two -->
+              <ul>
+                <h5>Semester 4</h5>
+                <li
+                  class="list-group-item d-flex justify-content-between align-items-centre"
+                >
+                  Software Development 4
+                  <span class="badge badge-success" style="width: 60px">A</span>
+                </li>
+                <li
+                  class="list-group-item d-flex justify-content-between align-items-centre"
+                >
+                  Software Quality Assurance and Testing
+                  <span class="badge badge-success" style="width: 60px">B</span>
+                </li>
+                <li
+                  class="list-group-item d-flex justify-content-between align-items-centre"
+                >
+                  Client-Side Web Development
+                  <span class="badge badge-success" style="width: 60px"
+                    >B+</span
+                  >
+                </li>
+                <li
+                  class="list-group-item d-flex justify-content-between align-items-centre"
+                >
+                  Database Technologies
+                  <span class="badge badge-success" style="width: 60px">A</span>
+                </li>
+                <li
+                  class="list-group-item d-flex justify-content-between align-items-centre"
+                >
+                  Discrete Mathematics 2
+                  <span class="badge badge-success" style="width: 60px">A</span>
+                </li>
+                <li
+                  class="list-group-item d-flex justify-content-between align-items-centre"
+                >
+                  Network Fundamentals
+                  <span class="badge badge-success" style="width: 60px">B</span>
+                </li>
+                <li
+                  class="list-group-item d-flex justify-content-between align-items-centre"
+                >
+                  Software Development 3
+                  <span class="badge badge-success" style="width: 60px">A</span>
+                </li>
+                <br />
+                <h5>Semester 3</h5>
+                <li
+                  class="list-group-item d-flex justify-content-between align-items-centre"
+                >
+                  IT Service Management
+                  <span class="badge badge-success" style="width: 60px">A</span>
+                </li>
+                <li
+                  class="list-group-item d-flex justify-content-between align-items-centre"
+                >
+                  Project
+                  <span class="badge badge-success" style="width: 60px">A</span>
+                </li>
+                <li
+                  class="list-group-item d-flex justify-content-between align-items-centre"
+                >
+                  Data Administration and Analysis
+                  <span class="badge badge-success" style="width: 60px">A</span>
+                </li>
+                <li
+                  class="list-group-item d-flex justify-content-between align-items-centre"
+                >
+                  Management Science
+                  <span class="badge badge-success" style="width: 60px">B</span>
+                </li>
+                <li
+                  class="list-group-item d-flex justify-content-between align-items-centre"
+                >
+                  Routing & Switching Essentials
+                  <span class="badge badge-success" style="width: 60px"
+                    >B-</span
+                  >
+                </li>
+                <li
+                  class="list-group-item d-flex justify-content-between align-items-centre"
+                >
+                  Information Security
+                  <span class="badge badge-success" style="width: 60px">B</span>
+                </li>
+                <br />
+              </ul>
+            </div>
+          </div>
+          <div id="yearOne" class="card card-body mb-3">
+            <h5
+              class="text"
+              style="font-weight: bold"
+              data-toggle="collapse"
+              data-target="#yearOneModules"
+              aria-expanded="false"
+              aria-controls="yearOneModules"
+            >
+              Year One
+            </h5>
+            <div id="yearOneModules" class="collapse">
+              <!-- Modules for Year One -->
+              <ul class="list-group">
+                <h5>Semester 2</h5>
+                <li
+                  class="list-group-item d-flex justify-content-between align-items-centre"
+                >
+                  Social Media Communications
+                  <span class="badge badge-success" style="width: 60px">A</span>
+                </li>
+                <li
+                  class="list-group-item d-flex justify-content-between align-items-centre"
+                >
+                  Systems Analysis
+                  <span class="badge badge-success" style="width: 60px">A</span>
+                </li>
+                <li
+                  class="list-group-item d-flex justify-content-between align-items-centre"
+                >
+                  Database Fundamentals
+                  <span class="badge badge-success" style="width: 60px">A</span>
+                </li>
+                <li
+                  class="list-group-item d-flex justify-content-between align-items-centre"
+                >
+                  Statistics
+                  <span class="badge badge-success" style="width: 60px">A</span>
+                </li>
+                <li
+                  class="list-group-item d-flex justify-content-between align-items-centre"
+                >
+                  Operating Systems Fundamentals
+                  <span class="badge badge-success" style="width: 60px">A</span>
+                </li>
+                <li
+                  class="list-group-item d-flex justify-content-between align-items-centre"
+                >
+                  Software Development 2
+                  <span class="badge badge-success" style="width: 60px">A</span>
+                </li>
+                <br />
+                <h5>Semester 1</h5>
+                <li
+                  class="list-group-item d-flex justify-content-between align-items-centre"
+                >
+                  Critical Skills Development
+                  <span class="badge badge-success" style="width: 60px">A</span>
+                </li>
+                <li
+                  class="list-group-item d-flex justify-content-between align-items-centre"
+                >
+                  Visual Design & User Experience
+                  <span class="badge badge-success" style="width: 60px">A</span>
+                </li>
+                <li
+                  class="list-group-item d-flex justify-content-between align-items-centre"
+                >
+                  Business & Information Systems
+                  <span class="badge badge-success" style="width: 60px">A</span>
+                </li>
+                <li
+                  class="list-group-item d-flex justify-content-between align-items-centre"
+                >
+                  Discrete Mathematics 1
+                  <span class="badge badge-success" style="width: 60px">A</span>
+                </li>
+                <li
+                  class="list-group-item d-flex justify-content-between align-items-centre"
+                >
+                  Computer Architecture
+                  <span class="badge badge-success" style="width: 60px">A</span>
+                </li>
+                <li
+                  class="list-group-item d-flex justify-content-between align-items-centre"
+                >
+                  Software Development 1
+                  <span class="badge badge-success" style="width: 60px">A</span>
+                </li>
+                <br />
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Project Section -->
+    <section id="projects" class="bg-light pt-5 pb-5">
+      <div class="container">
+        <h2 class="text-center mb-5" id="heading">My Projects</h2>
         <div class="row">
-            <!-- Project 1 -->
-            <div class="col-md-4 mb-4">
-                <div class="card">
-                    <img src="images/nualang.png" class="card-img-top" alt="Project 1 Image">
-                    <div class="card-body">
-                        <h5 class="card-title">Nualang App</h5>
-                        <p class="card-text">
-                            The Nualang App is an innovative language learning platform that combines AI-driven personalization with engaging, interactive exercises.</p>
-                        <button type="button" class="btn btn-primary align-items-center" data-toggle="modal" data-target="#project1Modal">Read More</button>
-                    </div>
+          <div class="col-lg-12 mb-5">
+            <div class="card project-card">
+              <div class="row no-gutters">
+                <div class="col-md-6">
+                  <img
+                    src="images/nualang.png"
+                    class="card-img"
+                    alt="Fourth Year Project"
+                  />
                 </div>
-            </div>
-
-            <!-- Project 2 -->
-            <div class="col-md-4 mb-4">
-                <div class="card">
-                    <img src="images/logo.png" class="card-img-top" alt="Project 2 Image">
-                    <div class="card-body">
-                        <h5 class="card-title">BlogWiz App</h5>
-                        <p class="card-text">Short description of the project...</p>
-                        <button class="btn btn-primary" data-toggle="modal" data-target="#project2Modal">Read More</button>
-                    </div>
+                <div class="col-md-6 d-flex align-items-center">
+                  <div class="card-body">
+                    <h4 class="card-title">Nualang</h4>
+                    <p class="card-text">
+                      The Nualang App is an innovative language learning
+                      platform that combines AI-driven personalization with
+                      engaging, interactive exercises.
+                    </p>
+                    <button
+                      class="btn btn-primary"
+                      data-toggle="modal"
+                      data-target="#project1Modal"
+                    >
+                      Read More
+                    </button>
+                  </div>
                 </div>
+              </div>
             </div>
-            <!-- Project 3 -->
-            <div class="col-md-4 mb-4">
-                <div class="card">
-                    <img src="images/Screenshot 2023-12-17 at 20.31.50.png" class="card-img-top" alt="Project 3 Image">
-                    <div class="card-body">
-                        <h5 class="card-title">Workout Generator</h5>
-                        <p class="card-text">Short description of the project...</p>
-                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#project3Modal">Read More</button>
-                    </div>
+          </div>
+          <div class="col-lg-12 mb-5">
+            <div class="card project-card">
+              <div class="row no-gutters">
+                <div class="col-md-6 d-flex align-items-center">
+                  <div class="card-body">
+                    <h4 class="card-title">BlogWiz App</h4>
+                    <p class="card-text">
+                      I'm currently developing BlogWiz, an innovative React app
+                      designed to revolutionize blog creation using OpenAI's
+                      ChatGPT API. It's a unique tool for generating engaging
+                      blog posts, which are then saved in Markdown and hosted on
+                      a Hugo server for easy access and reading.
+                    </p>
+                    <button
+                      class="btn btn-primary"
+                      data-toggle="modal"
+                      data-target="#project2Modal"
+                    >
+                      Read More
+                    </button>
+                  </div>
                 </div>
+                <div class="col-md-6">
+                  <img
+                    src="images/logo.png"
+                    class="card-img"
+                    alt="Fourth Year Project"
+                  />
+                </div>
+              </div>
             </div>
-
+          </div>
+          <!-- Project 3 -->
+          <div class="col-lg-12 mb-5">
+            <div class="card project-card">
+              <div class="row no-gutters">
+                <div class="col-md-6">
+                  <img
+                    src="images/Screenshot 2023-12-17 at 20.31.50.png"
+                    class="card-img"
+                    alt="Fourth Year Project"
+                  />
+                </div>
+                <div class="col-md-6 d-flex align-items-center">
+                  <div class="card-body">
+                    <h4 class="card-title">Workout Generator</h4>
+                    <p class="card-text">
+                      I developed Workout Generator, a Blazor app that
+                      customizes fitness routines. It intelligently tailors
+                      workout plans to individual goals, blending technology
+                      with fitness. This user-friendly app demonstrates my
+                      skills in software development and commitment to health
+                      and fitness innovation.
+                    </p>
+                    <button
+                      class="btn btn-primary"
+                      data-toggle="modal"
+                      data-target="#project3Modal"
+                    >
+                      Read More
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-    </div>
-</section>
+      </div>
+    </section>
 
-
-<!-- Project 1 Modal -->
-<div class="modal fade" id="project1Modal" tabindex="-1" aria-labelledby="project1ModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg">
+    <!-- Project 1 Modal -->
+    <div
+      class="modal fade"
+      id="project1Modal"
+      tabindex="-1"
+      aria-labelledby="project1ModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg">
         <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="project1ModalLabel">Nualang</h5>
-                <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close">Close</button>
+          <div class="modal-header">
+            <h5 class="modal-title" id="project1ModalLabel">Nualang</h5>
+            <button
+              class="btn btn-close btn-dark"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              Close
+            </button>
+          </div>
+          <div class="modal-body">
+            The Nualang App represents an innovative approach to language
+            learning, skillfully combining advanced technology with
+            user-friendly design to create an engaging and effective educational
+            experience. At its core, Nualang focuses on interactive learning,
+            utilizing artificial intelligence to provide personalized lessons
+            that adapt to each user's unique learning pace and style. The app
+            covers a wide array of languages, catering to a diverse user base
+            ranging from absolute beginners to advanced learners. One of the
+            standout features of Nualang is its emphasis on real-world
+            conversation skills, where users can practice speaking and listening
+            through simulated dialogues and interactive exercises. This approach
+            not only enhances language proficiency but also builds confidence in
+            practical, everyday communication. The app also incorporates
+            gamification elements, making the learning process both fun and
+            motivating, as users can track their progress, earn rewards, and
+            participate in challenges. With its intuitive interface,
+            comprehensive curriculum, and engaging learning modules, the Nualang
+            App is more than just a language learning tool; it's a gateway to
+            global communication and cultural exploration.
+            <div class="mt-4">
+              <strong>Languages</strong>
+              <p>React, JavaScript, Terraform, HTML, CSS, DynamoDB</p>
             </div>
-            <div class="modal-body">
-            The Nualang App represents an innovative approach to language learning, skillfully combining advanced technology with user-friendly design to create an engaging and effective educational experience. At its core, Nualang focuses on interactive learning, utilizing artificial intelligence to provide personalized lessons that adapt to each user's unique learning pace and style. The app covers a wide array of languages, catering to a diverse user base ranging from absolute beginners to advanced learners. One of the standout features of Nualang is its emphasis on real-world conversation skills, where users can practice speaking and listening through simulated dialogues and interactive exercises. This approach not only enhances language proficiency but also builds confidence in practical, everyday communication. The app also incorporates gamification elements, making the learning process both fun and motivating, as users can track their progress, earn rewards, and participate in challenges. With its intuitive interface, comprehensive curriculum, and engaging learning modules, the Nualang App is more than just a language learning tool; it's a gateway to global communication and cultural exploration.
-            </div>
-            <a href="https://www.nualang.com" class="btn btn-primary" target="_blank">Visit Website</a>
+          </div>
+          <a
+            href="https://www.nualang.com"
+            class="btn btn-primary"
+            target="_blank"
+            >Visit Website <i class="fas fa-external-link-alt"></i
+          ></a>
         </div>
+      </div>
     </div>
-</div>
-<!-- Project 2 Modal -->
-<div class="modal fade" id="project2Modal" tabindex="-1" aria-labelledby="project2ModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg">
+    <!-- Project 2 Modal -->
+    <div
+      class="modal fade"
+      id="project2Modal"
+      tabindex="-1"
+      aria-labelledby="project2ModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg">
         <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="project2ModalLabel">BlogWiz App</h5>
-                <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close">Close</button>
+          <div class="modal-header">
+            <h5 class="modal-title" id="project2ModalLabel">BlogWiz App</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              Close
+            </button>
+          </div>
+          <div class="modal-body">
+            I'm currently working on an exciting project called BlogWiz, a
+            React-based application that aims to transform the way blog content
+            is created. At the core of BlogWiz is the integration of OpenAI's
+            ChatGPT API, which enables the app to generate engaging and
+            high-quality blog posts through sophisticated natural language
+            processing. This project is a perfect fusion of my interest in AI
+            and web development, and I'm leveraging React's dynamic interface
+            capabilities to ensure a seamless user experience. One of the key
+            features of BlogWiz is its ability to efficiently manage the content
+            it creates. After generating a blog post, the app automatically
+            saves it in Markdown format. This not only ensures that the content
+            is easy to read and edit but also simplifies its transfer to
+            different platforms. The next step in the development process is
+            deploying these Markdown files on a Hugo server, known for its speed
+            and efficiency as a static site generator. This will allow end users
+            to easily access, read, and interact with the blog posts. As I
+            continue to develop BlogWiz, I'm focusing on refining its AI content
+            generation capabilities and optimizing the user experience. The goal
+            is to create a tool that not only assists in content creation but
+            also streamlines the entire blogging process, from writing to
+            publishing. Though still a work in progress, I'm enthusiastic about
+            the potential of BlogWiz to redefine AI-assisted blogging and
+            content management.
+            <div class="mt-4">
+              <strong>Languages</strong>
+              <p>React, Go, JavaScript, HTML, CSS</p>
             </div>
-            <div class="modal-body">
-                Full details of Project 2 here...
-            </div>
+          </div>
         </div>
+      </div>
     </div>
-</div>
-<!-- Project 3 Modal -->
-<div class="modal fade" id="project3Modal" tabindex="-1" aria-labelledby="project3ModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg">
+    <!-- Project 3 Modal -->
+    <div
+      class="modal fade"
+      id="project3Modal"
+      tabindex="-1"
+      aria-labelledby="project3ModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg">
         <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="project3ModalLabel">Workout Generator</h5>
-                <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close">Close</button>
+          <div class="modal-header">
+            <h5 class="modal-title" id="project3ModalLabel">
+              Workout Generator
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              Close
+            </button>
+          </div>
+          <div class="modal-body">
+            I've completed a project called Workout Generator, a Blazor-based
+            application designed to personalize fitness routines. This app
+            intelligently generates customized workout plans based on user
+            preferences and goals, leveraging the power of modern web
+            technologies to deliver a seamless and interactive experience. It's
+            a perfect blend of my passion for fitness and software development,
+            offering a user-friendly platform for individuals to access tailored
+            exercise regimens. This innovative app showcases my skills in
+            creating dynamic web applications and my commitment to promoting a
+            healthy lifestyle through technology.
+            <div class="mt-4">
+              <strong>Languages</strong>
+              <p>C#, Blazor, JavaScript, HTML, CSS</p>
             </div>
-            <div class="modal-body">
-                The Nualang App represents an innovative approach to language learning, skillfully combining advanced technology with user-friendly design to create an engaging and effective educational experience. At its core, Nualang focuses on interactive learning, utilizing artificial intelligence to provide personalized lessons that adapt to each user's unique learning pace and style. The app covers a wide array of languages, catering to a diverse user base ranging from absolute beginners to advanced learners. One of the standout features of Nualang is its emphasis on real-world conversation skills, where users can practice speaking and listening through simulated dialogues and interactive exercises. This approach not only enhances language proficiency but also builds confidence in practical, everyday communication. The app also incorporates gamification elements, making the learning process both fun and motivating, as users can track their progress, earn rewards, and participate in challenges. With its intuitive interface, comprehensive curriculum, and engaging learning modules, the Nualang App is more than just a language learning tool; it's a gateway to global communication and cultural exploration.
-                
-            </div>
-            <a href="https://shanemcg992.github.io/CA3_WorkoutGenerator/" class="btn btn-primary" target="_blank">Visit Website</a>
+          </div>
+          <a
+            href="https://shanemcg992.github.io/CA3_WorkoutGenerator/"
+            class="btn btn-primary"
+            target="_blank"
+            >Visit Website <i class="fas fa-external-link-alt"></i
+          ></a>
         </div>
+      </div>
     </div>
-</div>
 
-<!-- Skills Section -->
-<section id="skills" class="bg-light p-5">
-    <div class="container">
+    <!-- Skills Section -->
+    <section id="skills" class="bg-light p-5">
+      <div class="container">
         <h2 class="text-center mb-4" id="heading">Skills</h2>
         <div class="row mb-4">
-            <div class="col-md-6 mb-3">
-                <h5>UX Design</h5>
-                <div class="progress">
-                    <div class="progress-bar" role="progressbar" style="width: 70%;" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">70%</div>
-                </div>
+          <div class="col-md-6 mb-3">
+            <h5>UX Design</h5>
+            <div class="progress">
+              <div
+                class="progress-bar progress-bar-animated"
+                role="progressbar"
+                style="width: 0%"
+                aria-valuenow="80"
+                aria-valuemin="0"
+                aria-valuemax="100"
+              >
+                <strong>80%</strong>
+              </div>
             </div>
-            <div class="col-md-6 mb-3">
-                <h5>React</h5>
-                <div class="progress">
-                    <div class="progress-bar" role="progressbar" style="width: 85%;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">85%</div>
-                </div>
+          </div>
+          <div class="col-md-6 mb-3">
+            <h5>React</h5>
+            <div class="progress">
+              <div
+                class="progress-bar progress-bar-animated"
+                role="progressbar"
+                style="width: 0%"
+                aria-valuenow="85"
+                aria-valuemin="0"
+                aria-valuemax="100"
+              >
+                <strong>85%</strong>
+              </div>
             </div>
-            <div class="col-md-6 mb-3">
-                <h5>C++</h5>
-                <div class="progress">
-                    <div class="progress-bar" role="progressbar" style="width: 90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">90%</div>
-                </div>
+          </div>
+          <div class="col-md-6 mb-3">
+            <h5>C++</h5>
+            <div class="progress">
+              <div
+                class="progress-bar progress-bar-animated"
+                role="progressbar"
+                style="width: 0%"
+                aria-valuenow="89"
+                aria-valuemin="0"
+                aria-valuemax="100"
+              >
+                <strong>89%</strong>
+              </div>
             </div>
-            <div class="col-md-6 mb-3">
-                <h5>Spanish</h5>
-                <div class="progress">
-                    <div class="progress-bar" role="progressbar" style="width: 90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">90%</div>
-                </div>
+          </div>
+          <div class="col-md-6 mb-3">
+            <h5>Spanish</h5>
+            <div class="progress">
+              <div
+                class="progress-bar progress-bar-animated"
+                role="progressbar"
+                style="width: 0%"
+                aria-valuenow="75"
+                aria-valuemin="0"
+                aria-valuemax="100"
+              >
+                <strong>75%</strong>
+              </div>
             </div>
-            <div class="col-md-6 mb-3">
-                <h5>Python</h5>
-                <div class="progress">
-                    <div class="progress-bar" role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">75%</div>
-                </div>
+          </div>
+          <div class="col-md-6 mb-3">
+            <h5>Python</h5>
+            <div class="progress">
+              <div
+                class="progress-bar progress-bar-animated"
+                role="progressbar"
+                style="width: 0%"
+                aria-valuenow="75"
+                aria-valuemin="0"
+                aria-valuemax="100"
+              >
+                <strong>75%</strong>
+              </div>
             </div>
-            <div class="col-md-6 mb-3">
-                <h5>Javascript</h5>
-                <div class="progress">
-                    <div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">80%</div>
-                </div>
+          </div>
+          <div class="col-md-6 mb-3">
+            <h5>Javascript</h5>
+            <div class="progress">
+              <div
+                class="progress-bar progress-bar-animated"
+                role="progressbar"
+                style="width: 0%"
+                aria-valuenow="80"
+                aria-valuemin="0"
+                aria-valuemax="100"
+              >
+                <strong>80%</strong>
+              </div>
             </div>
+          </div>
         </div>
- 
-    </div>
-</section>
+      </div>
+    </section>
 
-
-<!-- Work Experience Section -->
-<section id="work-experience" class="bg-light pt-5 pb-5">
-    <div class="container">
-        <h2 class="text-center mb-4" id="heading">
-            Work Experience
-        </h2>
+    <!-- Work Experience Section -->
+    <section id="work-experience" class="bg-light pt-5 pb-5">
+      <div class="container">
+        <h2 class="text-center mb-5" id="heading">Work Experience</h2>
         <div id="workExperienceDetails" class="collapse show">
-            <!-- Work Experience Entry 1 -->
-            <div class="card mb-3">
-                <div class="row no-gutters">
-                    <div class="col-md-4">
-                        <img src="images/fathom.jpeg" class="card-img img-thumbnail img-work-experience" alt="Company 1">
-                    </div>
-                    <div class="col-md-8">
-                        <div class="card-body">
-                            <h5 class="card-title">Software Engineer Intern</h5>
-                            <h6 class="card-subtitle mb-2 text-muted">Fathom - Internship | Jan 2023 - Present</h6>
-                            <p class="card-text">Engaged in coding and code reviews with a focus on React.js and AWS services, enhancing my software development skills in a professional environment.</p>
-                        </div>
-                    </div>
+          <!-- Work Experience Entry 1 -->
+          <div class="card mb-5">
+            <div class="row no-gutters">
+              <div class="col-md-4">
+                <img
+                  src="images/fathom.jpeg"
+                  class="card-img img-thumbnail img-work-experience"
+                  alt="Company 1"
+                />
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Software Engineer Intern</h5>
+                  <h6 class="card-subtitle mb-2 text-muted">
+                    Fathom - Internship | Jan 2023 - Present
+                  </h6>
+                  <p class="card-text">
+                    Engaged in coding and code reviews with a focus on React.js
+                    and AWS services, enhancing my software development skills
+                    in a professional environment.
+                  </p>
                 </div>
+              </div>
             </div>
-            
-            <!-- Work Experience Entry 2 -->
-            <div class="card mb-3">
-                <div class="row no-gutters">
-                    <div class="col-md-4">
-                        <img src="images/ocb.jpeg" class="card-img img-thumbnail img-work-experience" alt="Company 2">
-                    </div>
-                    <div class="col-md-8">
-                        <div class="card-body">
-                            <h5 class="card-title">Senior Stylist</h5>
-                            <h6 class="card-subtitle mb-2 text-muted">Old County Barbers | May 2018 - Jun 2021</h6>
-                            <p class="card-text">With over 4 years of experience cutting hair and working in a dynamic barbershop setting, I excel in various styling techniques and thrive under pressure, ensuring customer satisfaction.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- Work Experience Entry 3 -->
-            <div class="card">
-                <div class="row no-gutters">
-                    <div class="col-md-4">
-                        <img src="images/dcb.png" class="card-img img-thumbnail img-work-experience" alt="Company 3">
-                    </div>
-                    <div class="col-md-8">
-                        <div class="card-body">
-                            <h5 class="card-title">Afro Hair Stylist</h5>
-                            <h6 class="card-subtitle mb-2 text-muted">Designer Cuts | May 2020 - Sep 2020</h6>
-                            <p class="card-text">Specialized in Afro-textured hair, contributing to an inclusive environment and expanding my expertise in diverse hairstyling methods.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+          </div>
 
-<!-- Interests Section -->
-<section id="interests" class="bg-light pt-5 pb-5">
-    <div class="container">
-        <h2 class="text-center mb-4" id="heading">
-            Interests
-        </h2>
+          <!-- Work Experience Entry 2 -->
+          <div class="card mb-5">
+            <div class="row no-gutters">
+              <div class="col-md-4">
+                <img
+                  src="images/ocb.jpeg"
+                  class="card-img img-thumbnail img-work-experience"
+                  alt="Company 2"
+                />
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Senior Stylist</h5>
+                  <h6 class="card-subtitle mb-2 text-muted">
+                    Old County Barbers | May 2018 - Jun 2021
+                  </h6>
+                  <p class="card-text">
+                    With over 4 years of experience cutting hair and working in
+                    a dynamic barbershop setting, I excel in various styling
+                    techniques and thrive under pressure, ensuring customer
+                    satisfaction.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Work Experience Entry 3 -->
+          <div class="card">
+            <div class="row no-gutters">
+              <div class="col-md-4">
+                <img
+                  src="images/dcb.png"
+                  class="card-img img-thumbnail img-work-experience"
+                  alt="Company 3"
+                />
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Afro Hair Stylist</h5>
+                  <h6 class="card-subtitle mb-2 text-muted">
+                    Designer Cuts | May 2020 - Sep 2020
+                  </h6>
+                  <p class="card-text">
+                    Specialized in Afro-textured hair, contributing to an
+                    inclusive environment and expanding my expertise in diverse
+                    hairstyling methods.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Interests Section -->
+    <section id="interests" class="bg-light pt-5 pb-5">
+      <div class="container">
+        <h2 class="text-center mb-4" id="heading">Interests</h2>
         <div id="interestsDetails" class="collapse show">
-            <div class="row">
-                <!-- Coding Interest -->
-                <div class="col-md-3 text-center mb-3">
-                    <i class="fas fa-code fa-3x mb-2"></i>
-                    <h4 class="mb-2">Coding</h4>
-                    <p>Passionate about contributing to open source projects and engaging in hackathons.</p>
-                </div>
-                
-                <!-- Football Interest -->
-                <div class="col-md-3 text-center mb-3">
-                    <i class="fas fa-futbol fa-3x mb-2"></i>
-                    <h4 class="mb-2">Football</h4>
-                    <p>Active football player with a love for both playing and watching the game.</p>
-                </div>
-                
-                <!-- Hair Styling Interest -->
-                <div class="col-md-3 text-center mb-3">
-                    <i class="fas fa-scissors fa-3x mb-2"></i>
-                    <h4 class="mb-2">Hair Styling</h4>
-                    <p>Enjoy keeping up with styling trends and cutting hair as a creative outlet.</p>
-                </div>
-                
-                <!-- Movie Watching Interest -->
-                <div class="col-md-3 text-center mb-3">
-                    <i class="fas fa-film fa-3x mb-2"></i>
-                    <h4 class="mb-2">Movies</h4>
-                    <p>Avid movie watcher with a broad taste in genres and a keen interest in film critique.</p>
-                </div>
+          <div class="row">
+            <!-- Coding Interest -->
+            <div class="col-md-3 text-center mb-3">
+              <i class="fas fa-code fa-3x mb-2"></i>
+              <h4 class="mb-2">Coding</h4>
+              <p>
+                Passionate about contributing to open source projects and
+                engaging in hackathons.
+              </p>
             </div>
+
+            <!-- Football Interest -->
+            <div class="col-md-3 text-center mb-3">
+              <i class="fas fa-futbol fa-3x mb-2"></i>
+              <h4 class="mb-2">Football</h4>
+              <p>
+                Active football player with a love for both playing and watching
+                the game.
+              </p>
+            </div>
+
+            <!-- Hair Styling Interest -->
+            <div class="col-md-3 text-center mb-3">
+              <i class="fas fa-scissors fa-3x mb-2"></i>
+              <h4 class="mb-2">Hair Styling</h4>
+              <p>
+                Enjoy keeping up with styling trends and cutting hair as a
+                creative outlet.
+              </p>
+            </div>
+
+            <!-- Movie Watching Interest -->
+            <div class="col-md-3 text-center mb-3">
+              <i class="fas fa-film fa-3x mb-2"></i>
+              <h4 class="mb-2">Movies</h4>
+              <p>
+                Avid movie watcher with a broad taste in genres and a keen
+                interest in film critique.
+              </p>
+            </div>
+          </div>
         </div>
-    </div>
-</section>
+      </div>
+    </section>
 
-<!-- Contact Button trigger modal -->
-<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#contactModal">
-    Contact Me
-</button>
-
-<!-- Modal -->
-<div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="contactModalLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="contactModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="contactModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
         <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title text-center mb-4"id="contactModalLabel">Contact Information</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <div class="modal-body">
-                <p>If you would like to get in touch with me, you can contact me at:</p>
-                <p>Email: <a href="mailto:shanemcg992@gmail.com">shanemcg992@gmail.com</a></p>
-                <p>Phone: <a href="tel:+353834347870">083 434 7870</a></p>
-            </div>
+          <div class="modal-header">
+            <h5 class="modal-title text-center mb-4" id="contactModalLabel">
+              Contact Information
+            </h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p>
+              Email:
+              <a href="mailto:shanemcg992@gmail.com">shanemcg992@gmail.com</a>
+            </p>
+            <p>Phone: <a href="tel:+353834347870">083 434 7870</a></p>
+            <a
+              href="https://github.com/shanemcg992"
+              target="_blank"
+              aria-label="Github"
+            >
+              <img
+                class="social-icon"
+                src="https://img.icons8.com/fluent/48/ffffff/github.png"
+                alt="GitHub"
+              />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/shanemcgarry21/"
+              target="_blank"
+              aria-label="Linkedin"
+            >
+              <img
+                class="social-icon"
+                src="https://img.icons8.com/fluent/48/ffffff/linkedin.png"
+                alt="LinkedIn"
+              />
+            </a>
+          </div>
         </div>
+      </div>
     </div>
-</div>
 
+    <footer class="text-center mb-4 mt-5">Shane McGarry - © 2023</footer>
 
-<footer class="text-center mb-4">Shane McGarry - © 2023</footer>
-
-
-
-<!-- Bootstrap JS and its dependencies -->
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.9.3/dist/umd/popper.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-<!-- Custom JS -->
-<script src="script.js"></script>
-
-</body>
+    <!-- Bootstrap JS and its dependencies -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+  </body>
 </html>

@@ -1,6 +1,7 @@
-body, h1, h2, h3, h4, h5, h6 {
-    font-family: 'Roboto', sans-serif;
+body, h1, h2, h3, h4, h5, h6, p, li {
+    font-family: 'Poppins', sans-serif;
 }
+
 
 p, li {
     font-weight: 400;
@@ -22,6 +23,10 @@ p, li {
     font-weight: bold;
     color: white;
     margin-bottom: 1rem;
+}
+
+.navbar-brand:hover {
+    color: lightblue;
 }
 
 #sidebar .nav-link {
@@ -93,6 +98,11 @@ img.img-fluid.rounded-circle {
 .card {
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
+
+.card:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+  }
 
 .badge {
     font-size: 1rem;
@@ -166,8 +176,27 @@ img.img-fluid {
 }
 
 .text:hover {
-    text-decoration: underline;
+    text-decoration: none;
 }
+
+.progress {
+    margin: 0;
+    background-color: #ddd;
+    height: 1rem;
+    overflow: hidden;
+  }
+  
+  .progress-bar {
+    color: #333;
+    text-align: right;
+    padding-right: 0.5rem;
+    background-color: lightblue;
+  }
+  
+  .progress-bar-animated {
+    width: 0%;
+    transition: width 2s ease;
+  }
 
 
 @media (max-width: 768px) {

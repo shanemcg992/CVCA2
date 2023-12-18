@@ -12,6 +12,29 @@ document.addEventListener('DOMContentLoaded', function() {
     }).on('hide.bs.collapse', function() {
         $(this).prev().find('.fa-chevron-up').removeClass('fa-chevron-up').addClass('fa-chevron-down');
     });
+
+    function animateProgressBar(pb) {
+        if (!$(pb).hasClass('animated')) {
+            $(pb).addClass('animated');
+            $(pb).css('width', $(pb).attr('aria-valuenow') + '%');
+        }
+    }
+
+    $(window).scroll(function() {
+        $('.progress-bar').each(function() {
+            if (isScrolledIntoView(this)) {
+                animateProgressBar(this);
+            }
+        });
+    });
+
+    function isScrolledIntoView(elem) {
+        let docViewTop = $(window).scrollTop();
+        let docViewBottom = docViewTop + $(window).height();
+        let elemTop = $(elem).offset().top;
+        let elemBottom = elemTop + $(elem).height();
+        return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
+    }
 });
 
 
